@@ -1,4 +1,4 @@
 # SolidPrinciples
-Miniproject showing the use of SolidPrinciples.
+Miniproject in JAVA showing the use of SolidPrinciples.
 
-Classes implementing SOLID principles for educational purpose.
+  + Classes implementing SOLID principles for educational purpose.
