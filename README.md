@@ -1,4 +1,4 @@
-# SolidPrinciples
+# FractionProject
 Miniproject in JAVA showing the use of SolidPrinciples.
 
-  + Classes implementing SOLID principles for educational purpose.
+  + Fraction Classes implementing SOLID principles for educational purpose.
