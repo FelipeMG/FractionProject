@@ -2,9 +2,14 @@ public class Fraction {
    private int numerator;
    private int denominator;
    public Fraction(int numerator, int denominator) {
-	   final int GCF = ArithmeticOperations.gcf(numerator, denominator);
-	   this.numerator = numerator / GCF;
-	   this.denominator = denominator / GCF;
+	   if(denominator != 0){		
+		   final int GCF = ArithmeticOperations.gcf(numerator, denominator);
+		   this.numerator = numerator / GCF;
+		   this.denominator = denominator / GCF;		   
+	   }
+	   else{
+		   throw new IllegalArgumentException();
+	   }	   
    }
    public Fraction sum(Fraction that) {
 	   final int LCM = ArithmeticOperations.lcm(this.denominator, that.denominator);
