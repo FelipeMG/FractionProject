@@ -8,7 +8,7 @@ public class Fraction {
 		   this.denominator = denominator / GCF;		   
 	   }
 	   else{
-		   throw new IllegalArgumentException();
+		   throw new IllegalArgumentException("Denominator can't be 0");
 	   }	   
    }
    public Fraction sum(Fraction that) {
