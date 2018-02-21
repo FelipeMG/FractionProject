@@ -29,6 +29,22 @@ public class FractionTest {
     }
 
     @Test
+    public void oneHalfPlusOneThirdIsFiveSixths(){
+        Fraction oneHalf = Fraction.of(1, 2);
+        Fraction oneThird = Fraction.of(1, 3);
+        Fraction fiveSixths = Fraction.of(5, 6);
+        assertThat(oneHalf.plus(oneThird), is(fiveSixths));
+    }
+
+    @Test
+    public void twoThirdsPlusThreeFourthsIsSeventeenTwelfths(){
+        Fraction twoThirds = Fraction.of(2, 3);
+        Fraction threeFourths = Fraction.of(3, 4);
+        Fraction seventeenTwelfths = Fraction.of(17, 12);
+        assertThat(twoThirds.plus(threeFourths), is(seventeenTwelfths));
+    }
+
+    @Test
     public void threeFourthsMinusOneHalfIsOneFourth(){
         Fraction threeFourths = Fraction.of(3, 4);
         Fraction oneFourth = Fraction.of(1, 4);
