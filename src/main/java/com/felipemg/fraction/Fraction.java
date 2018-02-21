@@ -1,3 +1,5 @@
+package com.felipemg.fraction;
+
 public class Fraction {
    private int numerator;
    private int denominator;
@@ -9,16 +11,16 @@ public class Fraction {
 	   }
 	   else{
 		   throw new IllegalArgumentException("Denominator can't be 0");
-	   }	   
+	   }
    }
-   public Fraction sum(Fraction that) {
+   public Fraction plus(Fraction that) {
 	   final int LCM = ArithmeticOperations.lcm(this.denominator, that.denominator);
 	   final int numerator = LCM / this.denominator * this.numerator 
 		   + LCM / that.denominator * that.numerator;
 	   return new Fraction(numerator, LCM);
    }
    public Fraction minus(Fraction that) {
-	   return this.sum(that.negative());
+	   return this.plus(that.negative());
    }
    public Fraction times(Fraction that) {
 	   final int numerator = this.numerator * that.numerator;
